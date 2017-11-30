@@ -28,7 +28,7 @@ public class NetworkHandler {
 
     public NetworkHandler(Context context) {
         this.context = context;
-        //Prevent form the reflection api.
+        //Prevent from the reflection api.
         if (networkHandlerSingletonInstance != null) {
             throw new RuntimeException("Use getInstance() method to get the single instance of this class.");
         }
@@ -38,7 +38,7 @@ public class NetworkHandler {
         if (networkHandlerSingletonInstance == null) { //if there is no instance available... create new one
             synchronized (NetworkHandler.class) {
                 if (networkHandlerSingletonInstance == null) {
-                    networkHandlerSingletonInstance = new NetworkHandler(context);
+                    networkHandlerSingletonInstance = new NetworkHandler(context.getApplicationContext());
                 }
 
             }
