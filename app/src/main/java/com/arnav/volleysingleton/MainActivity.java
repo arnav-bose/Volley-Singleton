@@ -13,7 +13,7 @@ import java.lang.reflect.Method;
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private Button buttonRequest;
-    private String url = "https://api.starquik.com/api/hotoffers?_=1512052092510";
+    private String url = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
